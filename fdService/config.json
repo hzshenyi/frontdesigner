@@ -1,0 +1,6 @@
+{
+    "moduleLib":{"path":"/usr/shenyi/fd/fd-platform/srcFd"},
+  
+    "platform":{"host":"127.0.0.1","port":"8081"}
+ 
+} 

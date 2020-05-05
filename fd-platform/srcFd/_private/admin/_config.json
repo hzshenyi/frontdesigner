@@ -1,0 +1,88 @@
+{
+    "modules": [
+        {
+            "title": "配置模块",
+            "name": "_config",
+            "resource": {
+                "lib": [
+                    {
+                        "title": "入口",
+                        "name": "_index.js"
+                    }
+                ],
+               
+                "config": [
+                    {
+                        "title": "路由配置",
+                        "name": "_router.js"
+                    },
+                    {
+                        "title": "服务接口配置",
+                        "name": "_service.js"
+                    }
+                ],
+                "link": [
+                    {
+                        "title": "状态(vuex)",
+                        "name": "D:/dev/service/nodejs/fd-platform/src/store/index.js"
+                    }  
+                ] 
+            } 
+        },
+        {
+            "title": "车辆管理",
+            "name": "flow",
+            "resource": {
+                "lib":[{
+                    "title":"接口",
+                    "name":"_index.js"
+                }],
+                "view": [
+                    {
+                        "title": "主页框架",
+                        "name": "index.vue"
+                    },{
+                        "title": "应用入口",
+                        "name": "app.vue"
+                    },{
+                        "title": "待办页面",
+                        "name": "todoList.vue"
+                    },{
+                        "title": "详情页面",
+                        "name": "details.vue"
+                    },{
+                        "title": "详情页面-基本信息",
+                        "name": "details-form.vue"
+                    },{
+                        "title": "详情页面-审批历史",
+
+                        "name": "details-record.vue"
+                    },{
+                        "title": "处理页面",
+                        "name": "decision.vue"
+                    },{
+                        "title": "测试页面",
+                        "name": "test.vue"
+                    }
+                ],
+                "com": [ 
+                    {
+                        "title": "下一环节处理",
+                        "name": "nextNode.vue"
+                    },
+                    {
+                        "title": "流程跟踪",
+                        "name": "flowTrace.vue"
+                    }
+                ],
+                "css":[
+                    {
+                        "title":"样式变量",
+                        "name":"var.scss"
+                    }
+                ]
+                
+            }
+        }
+    ]
+}

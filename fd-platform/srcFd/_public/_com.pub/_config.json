@@ -1,0 +1,84 @@
+{
+    "title":"公共空间",
+    "modules": [
+        {
+            "title": "配置模块",
+            "name": "_config",
+            "resource": {
+                "lib": [
+                    {
+                        "title": "入口",
+                        "name": "_index.js"
+                    }
+                ],
+                "router1": [
+                    {
+                        "title": "主页路由配置",
+                        "name": "_index.js"
+                    }
+                ],
+                "config": [
+                    {
+                        "title": "路由配置",
+                        "name": "_router.js"
+                    }
+                ],
+                "link": [
+                    {
+                        "title": "状态(vuex)",
+                        "name": "D:/dev/service/nodejs/fdplatform/src/store/index.js"
+                    }
+                ]
+            } 
+        },
+        {
+            "title": "UI组件",
+            "name": "fdui",
+            "resource": {     
+                "lib": [
+                {
+                    "title": "对外接口",
+                    "name": "_index.js"
+                }
+            ],           
+                "com": [
+                    {
+                        "title": "布局",
+                        "name": "layout.vue"
+                    }, {
+                        "title": "布局head",
+                        "name": "layout-head.vue"
+                    }, {
+                        "title": "布局content",
+                        "name": "layout-content.vue"
+                    }, {
+                        "title": "表单复选",
+                        "name": "form-checkbox.vue"
+                    }, {
+                        "title": "表单多选",
+                        "name": "form-select.vue"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"流程组件",
+            "name":"uniflow",
+            "resource": {     
+                "lib": [
+                {
+                    "title": "对外接口",
+                    "name": "_index.js"
+                }
+            ],           
+                "com": [
+                    {
+                        "title": "流程跟踪",
+                        "name": "flowTrace.vue"
+                    }
+                ]
+            }
+        }
+        
+    ]
+}

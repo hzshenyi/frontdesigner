@@ -1,0 +1,70 @@
+{
+    "modules": [
+        {
+            "title": "配置模块",
+            "name": "_config",
+            "resource": {
+                "lib": [
+                    {
+                        "title": "入口",
+                        "name": "_index.js"
+                    }
+                ],
+                "router": [
+                    {
+                        "title": "主页路由配置",
+                        "name": "_index.js"
+                    }
+                ],
+                "config": [
+                    {
+                        "title": "模块配置",
+                        "name": "_config.json"
+                    }
+                ],
+                "link": [
+                    {
+                        "title": "状态(vuex)",
+                        "name": "D:/dev/service/nodejs/fdplatform/src/store/index.js"
+                    }
+                ]
+            } 
+        },
+        {
+            "title": "发文管理1",
+            "name": "flow",
+            "resource": {
+                "view": [
+                    {
+                        "title": "主页",
+                        "name": "index.vue"
+                    },{
+                        "title": "待办页面",
+                        "name": "todoList.vue"
+                    }
+                ],
+                "com": [
+                    {
+                        "title": "下一环节处理",
+                        "name": "nextNode.vue"
+                    },
+                    {
+                        "title": "流程跟踪",
+                        "name": "flowTrace.vue"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "网格管理",
+            "resource": {
+                "com": [
+                    {
+                        "title": "下一环节处理",
+                        "name": "nextNode"
+                    }
+                ]
+            }
+        }
+    ]
+}
