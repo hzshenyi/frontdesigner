@@ -1,4 +1,4 @@
-# fd-client2
+# fd-client1
 
 ## Project setup
 ```
