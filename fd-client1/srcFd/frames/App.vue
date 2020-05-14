@@ -14,7 +14,7 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="$store.state.spaceDraw = !$store.state.spaceDraw" />
-      <v-toolbar-title>FrontDesigner V0.1</v-toolbar-title>
+      <v-toolbar-title>FrontDesigner V0.1 2020-05-14</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
