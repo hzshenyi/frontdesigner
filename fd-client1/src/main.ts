@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import './plugins/axios'
 import App from '../srcFd/frames/App.vue'
 import router from './router'
 import store from './store'

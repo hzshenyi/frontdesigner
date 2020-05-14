@@ -164,7 +164,8 @@ export default {
         host +
         "/module/getList?_app=" +
         (app == null ? "" : app);
-      fetch(url, { 
+        /*
+      fetch(url, {
         method: "GET",
         headers: {
           "content-type": "text/plain"
@@ -175,7 +176,12 @@ export default {
         })
         .then(data => {
           this.moduleList = data.modules;
-        });
+        });*/
+ this.axios.defaults.withCredentials = false; //不允许携带cookie
+    this.axios.get(url).then(res => {
+     this.moduleList = res.data.modules;
+    });
+
     },
       editResource:function(module,resource,resourceType) {     
       let $store = this.$store;
