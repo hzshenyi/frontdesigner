@@ -16,7 +16,7 @@ export default {
     };
   },
   created() {
-     this.$store.state.spaceDraw = false;
+    // this.$store.state.spaceDraw = false; //隐藏左边应用系统导航
     this.loadApp();
     
   },
