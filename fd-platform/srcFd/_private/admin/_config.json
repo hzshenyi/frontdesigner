@@ -84,5 +84,125 @@
                 
             }
         }
-    ]
+    ],
+    "modulesTree":[
+        {
+          "id": 1,
+          "name": "配置模块","file":"module",
+          "children": [
+            {
+              "id": 2,
+              "name": "视图","file": "view",
+              "children": [
+                {
+                  "id": 201,
+                  "name": "John","file": "view"
+                },
+                {
+                  "id": 202,
+                  "name": "Kael","file": "view"
+                }
+               
+              ]
+            },
+            {
+              "id": 3,
+              "name": "脚本","file": "js",
+              "children": [
+                {
+                  "id": 301,
+                  "name": "Ranee","file": "js"
+                },
+                {
+                  "id": 302,
+                  "name": "Rachel","file": "js"
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "配置","file": "js",
+              "children": [
+                {
+                  "id": 401,
+                  "name": "Phlow","file": "js"
+                },
+                {
+                  "id": 402,
+                  "name": "Brandon","file": "js"
+                },
+                {
+                  "id": 403,
+                  "name": "Sean","file": "js"
+                }
+              ]
+            }
+          ]
+        },
+        {
+            "id": 2,
+            "name": "车辆管理模块","file":"module",
+            "children": [
+              {
+                "id": 2,
+                "name": "Core team",
+                "children": [
+                  {
+                    "id": 201,
+                    "name": "John"
+                  },
+                  {
+                    "id": 202,
+                    "name": "Kael"
+                  },
+                  {
+                    "id": 203,
+                    "name": "Nekosaur"
+                  },
+                  {
+                    "id": 204,
+                    "name": "Jacek"
+                  },
+                  {
+                    "id": 205,
+                    "name": "Andrew"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "name": "Administrators",
+                "children": [
+                  {
+                    "id": 301,
+                    "name": "Ranee"
+                  },
+                  {
+                    "id": 302,
+                    "name": "Rachel"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "name": "Contributors",
+                "children": [
+                  {
+                    "id": 401,
+                    "name": "Phlow"
+                  },
+                  {
+                    "id": 402,
+                    "name": "Brandon"
+                  },
+                  {
+                    "id": 403,
+                    "name": "Sean"
+                  }
+                ]
+              }
+            ]
+          }
+      ]
+    
 }
