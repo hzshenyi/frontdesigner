@@ -33,7 +33,7 @@ class Module {
     getResourcePath(app,module, resource) {
         const baseDir = this.index.config.moduleLib.path;//根路径
         const spaceDir = this.getSpaceName(app);//公共空间 
-        const moduleDir = module + ".mo";
+        const moduleDir = module.indexOf(".mo")==-1?module + ".mo":module;
     
         const path = baseDir + "/" + spaceDir + "/" + moduleDir + "/"  + resource;
         return path;

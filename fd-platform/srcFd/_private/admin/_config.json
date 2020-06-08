@@ -88,52 +88,52 @@
     "modulesTree":[
         {
           "id": 1,
-          "name": "配置模块","file":"module",
+          "name": "_config.mo","title":"配置模块",
           "children": [
             {
               "id": 2,
-              "name": "视图","file": "view",
+              "name": "_js","title":"脚本","type": "category",
               "children": [
                 {
                   "id": 201,
-                  "name": "John","file": "view"
+                  "name": "_index.js","title":"入口脚本","file":"js"
                 },
                 {
                   "id": 202,
-                  "name": "Kael","file": "view"
+                  "name": "Kael","title":"配置模块","file": "view"
                 }
                
               ]
             },
             {
               "id": 3,
-              "name": "脚本","file": "js",
+              "name": "脚本","title":"配置模块","file": "js",
               "children": [
                 {
                   "id": 301,
-                  "name": "Ranee","file": "js"
+                  "name": "入口","title":"配置模块","file": "js"
                 },
                 {
                   "id": 302,
-                  "name": "Rachel","file": "js"
+                  "name": "Rachel","title":"配置模块","file": "js"
                 }
               ]
             },
             {
               "id": 4,
-              "name": "配置","file": "js",
+              "name": "配置","title":"配置模块","file": "js",
               "children": [
                 {
                   "id": 401,
-                  "name": "Phlow","file": "js"
+                  "name": "Phlow","title":"配置模块","file": "js"
                 },
                 {
                   "id": 402,
-                  "name": "Brandon","file": "js"
+                  "name": "Brandon","title":"配置模块","file": "js"
                 },
                 {
                   "id": 403,
-                  "name": "Sean","file": "js"
+                  "name": "Sean","title":"配置模块","file": "js"
                 }
               ]
             }
@@ -141,7 +141,7 @@
         },
         {
             "id": 2,
-            "name": "车辆管理模块","file":"module",
+            "name": "flow","title":"车辆管理模块","file":"module",
             "children": [
               {
                 "id": 2,

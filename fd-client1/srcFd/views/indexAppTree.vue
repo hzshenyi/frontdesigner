@@ -24,15 +24,13 @@
     <v-card-text>
       <v-treeview
     v-model="tree"
-    :open.sync="open"
+    :open="open"
     :items="items"
     :active.sync="active"
     activatable
     return-object
     item-key="name"
-    item-text="title"
     open-on-click
-    :load-children="loadChildren"
   >
     <template v-slot:prepend="{ item, open }">
       <v-icon v-if="!item.file">
@@ -48,7 +46,7 @@
     </div>
      <!-- 右 -->
       <div class="fd-content">
-       <vscode :resourcePath="item"   :resourceObjActived="resourceObjActived"  v-for="(item,i) in resourceList"   :key="i"></vscode>
+       <vscode :resourcePath="item"   :resourceObjActived="resourceObjActived" v-for="(item,i) in resourceList"   :key="i"   v-show="item==resourceActived"></vscode>
     </div>
   </div>
 
@@ -79,8 +77,7 @@ export default {
         txt: 'mdi-file-document-outline',
         xls: 'mdi-file-excel',
       },
-      tree: []
-     
+      tree: [],
     };
   },
   created() {
@@ -88,7 +85,6 @@ export default {
   },
   watch: {
       active(value) {
-        debugger
       let item = value[0];//得到选中的资源
       this.editResource(item)
     }
@@ -112,20 +108,18 @@ export default {
     },
       editResource:function(module,resource,resourceType) {     
       let $store = this.$store;
-     // let resourcePath = this.app+"/"+module.name+"/"+resourceType+"/"+resource.name;
+     // let resourcePath = this.app+"/"+module.name+".mo"+"/"+resourceType+"/"+resource.name;
       
       //resourcePath = `_app=${this.app}&module=${module.name}&resource=${resourceType}/${resource.name}`;
       let resourcePath = "_app=admin&module=flow.mo&resource=_lib/_index.js";
-    //  this.resourceActived = resourcePath;
-     module = {title:module.name};
-     resource = {};
-     this.resourceObjActived = {module:module,resource:resource};//当前选中模块资源
+      this.resourceActived = resourcePath;
+      //this.resourceObjActived = {module:module,resource:resource};//当前选中模块资源
       //设置已打开资源为非激活状态
-     // this.resourceOpenList.map(function(obj){
-        //  obj.active = false;
-     // })
-     // resource.active = true;//设置当前资源为激活状态
-      //resource.opened = true;//设置当前资源为打开状态
+      this.resourceOpenList.map(function(obj){
+          obj.active = false;
+      })
+      resource.active = true;//设置当前资源为激活状态
+      resource.opened = true;//设置当前资源为打开状态
       if(this.resourceList.indexOf(resourcePath)==-1){
           this.resourceList.push(resourcePath);
            //记录所有打开资源
@@ -139,9 +133,6 @@ alert(1)
     },
     saveResource:function(){
       alert(3)
-    },
-     loadChildren:function(){
-        debugger;
     }
   }
 };
