@@ -4,6 +4,7 @@ import App from '../srcFd/frames/App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
+import './plugins/element.js'
 import  './plugins/fdclient';
 
 Vue.config.productionTip = false

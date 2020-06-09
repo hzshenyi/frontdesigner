@@ -8,10 +8,10 @@ router.get('/get', function(req, res, next) {
   res.header("Content-Type", "text/html;charset=utf-8");
   let app = req.param("_app");
   let module = req.param("module");
-  let resource = req.param("resource");
-  global.index.logger.log("路由:module->get"+"module="+module+" resource="+resource)
+  let resourcePath = req.param("_resourcePath");
+  global.index.logger.log("路由:module->get"+"module="+module+" resource="+resourcePath)
  
-  let html = moduleObj.get(app,module,resource);
+  let html = moduleObj.get(app,module,resourcePath);
   res.send(html);
 });
 /**

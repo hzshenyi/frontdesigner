@@ -15,8 +15,8 @@ class Module {
         return this.resource.get(resourcePath);
     }
     //通过模块名和资源名获得内容
-    get(app,module, resource) {
-        const resourcePath = this.getResourcePath(app,module, resource);
+    get(app,module, resourcePath) {
+        resourcePath = this.getResourcePath(app,module, resourcePath);
         let html = this.resource.get(resourcePath);
         return html;
     }
@@ -30,12 +30,13 @@ class Module {
        return JSON.stringify(this.config);
     }
     //通过模块名和资源名获得路径
-    getResourcePath(app,module, resource) {
+    getResourcePath(app,module, resourcePath) {
         const baseDir = this.index.config.moduleLib.path;//根路径
         const spaceDir = this.getSpaceName(app);//公共空间 
-        const moduleDir = module.indexOf(".mo")==-1?module + ".mo":module;
+       // const moduleDir = module.indexOf(".mo")==-1?module + ".mo":module;
     
-        const path = baseDir + "/" + spaceDir + "/" + moduleDir + "/"  + resource;
+       // const path = baseDir + "/" + spaceDir + "/" + moduleDir + "/"  + resource;
+       const path = baseDir + "/" + spaceDir + "/"  + resourcePath;
         return path;
     }
     getSpaceName(app){

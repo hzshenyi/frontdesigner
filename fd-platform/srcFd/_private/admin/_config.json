@@ -92,7 +92,7 @@
           "children": [
             {
               "id": 2,
-              "name": "_js","title":"脚本","type": "category",
+              "name": "_lib","title":"类库","type": "category",
               "children": [
                 {
                   "id": 201,
@@ -107,11 +107,11 @@
             },
             {
               "id": 3,
-              "name": "脚本","title":"配置模块","file": "js",
+              "name": "_config","title":"配置","file": "js",
               "children": [
                 {
                   "id": 301,
-                  "name": "入口","title":"配置模块","file": "js"
+                  "name": "_router.js","title":"路由配置","file": "js"
                 },
                 {
                   "id": 302,
