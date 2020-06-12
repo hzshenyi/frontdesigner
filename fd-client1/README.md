@@ -1,4 +1,4 @@
-# fd-client 2020-05-14-00 master2
+# fd-client 2020-05-14-00 clone
 
 ## Project setup
 ```
