@@ -6,8 +6,9 @@ import store from './store'
 import vuetify from './plugins/vuetify';
 import './plugins/element.js'
 import  './plugins/fdclient';
-
-Vue.config.productionTip = false
+import  Mock from './mock/index'; 
+Mock.startMock();
+Vue.config.productionTip = false 
 
 new Vue({
   router,

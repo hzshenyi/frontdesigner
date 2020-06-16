@@ -6,7 +6,7 @@
       clipped
     >
      <!-- 空间组件 -->
-      <space></space>
+      <space></space><list></list>
     </v-navigation-drawer>
 
     <v-app-bar
@@ -95,6 +95,7 @@ body {
 </style>
 <script>
 import space from "../views/space.vue"
+import list from "../../src/components/list.vue"
   export default {
     props: {
       source: String,
@@ -106,7 +107,8 @@ import space from "../views/space.vue"
      this.$vuetify.theme.dark = true
     },
     components:{
-      space
+      space,
+      list
     }
   }
 </script>

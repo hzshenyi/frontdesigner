@@ -3,7 +3,7 @@
     <div class="fd-head" style="height:55px">
       <v-chip class="ma-2" color="pink" label text-color="white">
         <v-icon left>mdi-label</v-icon>
-        {{resourceObjActived.module.title}}>{{resourceObjActived.resource.title}}
+        {{resourceObjActived.module.title}}{{resourceObjActived.resource.title}}
       </v-chip>
 
       <v-chip

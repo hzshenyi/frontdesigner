@@ -101,7 +101,7 @@ export default {
       let resourcePath = "_app=admin&_resourcePath="+this.getResourcePath(node);
     //  this.resourceActived = resourcePath;
      //module = {title:module.name};
-     let resource = {};
+     let resource = {title:`${data.title}(${resourcePath.substring(resourcePath.indexOf("resourcePath")+13)})`};
      this.resourceObjActived = {module:module,resource:resource};//当前选中模块资源
      this.resourcePathActived = resourcePath;//当前选中的资源的路径
      data.resourcePath = resourcePath;
